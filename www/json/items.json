@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Develop a to do list",
+    "description": "Hummmm if you call this a to do list",
+    "date": "Yesterday",
+    "category": "Work",
+    "status": "NotDone"
+  },
+  {
+    "title": "Buy flights",
+    "description": "CPH/BCN - 15/03/2018",
+    "date": "Friday",
+    "category": "Personal",
+    "status": "NotDone"
+  },
+  {
+    "title": "Star Wars",
+    "description": "Buy tickets for the new Star Wars movie",
+    "date": "Friday",
+    "category": "Hobbies",
+    "status": "NotDone"
+  },
+  {
+    "title": "Walk the dog",
+    "description": "Borring!",
+    "date": "Every Single day",
+    "category": "Family",
+    "status": "NotDone"
+  },
+  {
+    "title": "New year's eve",
+    "description": "Buy supplies for new year's eve",
+    "date": "Today",
+    "category": "Personal",
+    "status": "NotDone"
+  }
+]

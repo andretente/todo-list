@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Meeting at Lernia",
+    "description": "About Individual project",
+    "date": "Tomorrow",
+    "category": "Work",
+    "status": "Done"
+  },
+  {
+    "title": "Buy milk",
+    "description": "1L low fat milk",
+    "date": "Tomorrow",
+    "category": "Family",
+    "status": "Done"
+  },
+  {
+    "title": "Training",
+    "description": "Cycle to Ystad",
+    "date": "Saturday",
+    "category": "Hobbies",
+    "status": "Done"
+  }
+]

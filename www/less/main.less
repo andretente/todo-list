@@ -1,0 +1,109 @@
+body {
+  background-color:#fff;
+  color: @black;
+}
+.logo-bar{
+  height: 80px;
+  position: relative;
+}
+.logo{
+  width: 50px;
+}
+.logo-modal{
+  width: 90px;
+}
+.title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-icon{
+  height: fit-content;
+}
+.borber-bottom-blue{
+  border-bottom: 1px solid @blue !important;
+}
+.borber-top-blue{
+  border-top: 1px solid @blue !important;
+}
+.form-control,{
+  border-radius: 0;
+}
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+ul{
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+option:hover{
+  background-color: @blue !important;
+}
+.list,
+.list .card-header{
+  border-radius: 0;
+  box-shadow: none;
+  border:0;
+}
+.list .card-header:hover{
+  cursor: pointer;
+  background-color: @soft-blue;
+  border-color: @soft-blue;
+}
+
+.btn{
+  border-radius: 0;
+}
+.btn-blue-white{
+  color: @white;
+  background-color: @blue;
+}
+.btn-blue-white:hover{
+  color: @black;
+  background-color: @blue;
+  cursor: pointer;
+}
+
+.btn-white-blue{
+  color: @blue;
+  background-color: @white;
+}
+.btn-white-blue:hover{
+  color: @black;
+  background-color: @white;
+  border-bottom: 1px solid @blue;
+}
+.btn-white-blue.active{
+  color: @white;
+  background-color: @blue;
+  outline: none;
+}
+
+.btn-pink-white{
+  color: @white;
+  background-color: @pink;
+}
+.btn-pink-white:hover{
+  color: @black;
+  background-color: @pink;
+  cursor: pointer;
+}
+
+.text-pink{
+  color: @pink;
+}
+.text-blue{
+  color: @blue;
+}
+@media (min-width: 476px) {
+  .item-title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

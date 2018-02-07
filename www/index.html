@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DoitDoit</title>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/libs/bootstrap-4-beta.css">
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row bg-light borber-bottom-blue">
+        <div class="container p-0 logo-bar d-inline-flex justify-content-between px-4 px-sm-0">
+            <img src="imgs/logo.svg" alt="" class="img-fluid logo align-self-center">
+            <h2 class="text-center title align-self-center"><span class="text-blue">D</span>o<span class="text-blue">i</span>t<span class="text-blue">D</span>o<span class="text-blue">i</span>t</h2>
+            <button class="btn btn-blue-white d-lg-none menu-icon align-self-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon p-0 m-0">
+                <i class="fa fa-bars p-0 m-0" aria-hidden="true"></i>
+              </span>
+            </button>
+        </div>
+      </div>
+      <div class="container-fluid p-0 mt-2">
+        <div class="navbar navbar-expand-lg p-0 container">
+          <div class="nav-btn-group collapse navbar-collapse row p-0 m-0 mt-2" id="navbarSupportedContent">
+            <div class="col-12 d-flex flex-column flex-lg-row p-0">
+              <a class="btn btn-white-blue active mr-1 nav-btn" id="all-tab" href="/">All Tasks</a>
+              <a class="btn btn-white-blue mx-1 nav-btn" id="personal-tab" href="/personal">Personal</a>
+              <a class="btn btn-white-blue mx-1 nav-btn" id="work-tab" href="/work">Work</a>
+              <a class="btn btn-white-blue mx-1 nav-btn" id="family-tab" href="/family">Family</a>
+              <a class="btn btn-white-blue mx-1 nav-btn" id="hobbies-tab" href="/hobbies">Hobbies</a>
+              <a class="btn btn-white-blue mx-1 nav-btn" id="done-tab" href="/done">Done</a>
+              <button type="button" class="btn btn-blue-white mt-2 mt-lg-0 mx-1 mx-lg-0 ml-lg-auto" data-toggle="modal" data-target="#add-task-modal">
+                Add Task
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="add-task-modal" tabindex="-1" role="dialog" aria-labelledby="add-task-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column borber-bottom-blue">
+                <img src="imgs/logo.svg" alt="" class="img-fluid logo-modal">
+                <h4 class=" w-100 text-center mt-2">Add Task</h4>
+              </div>
+              <div class="modal-body">
+                <label for="title">Task title</label>
+                <input type="text" class="form-control" id="title" placeholder="Title">
+                <label class="mt-2" for="description">Task description</label>
+                <input type="text" class="form-control" id="description" placeholder="Description">
+                <label class="mt-2" for="date">Task date</label>
+                <input type="text" class="form-control" id="date" placeholder="Date">
+                <label class="mt-2" for="category">Task category</label>
+                <select class="form-control mb-2" id="category">
+                  <option>Personal</option>
+                  <option>Work</option>
+                  <option>Family</option>
+                  <option>Hobbies</option>
+                </select>
+              </div>
+              <div class="modal-footer borber-top-blue">
+                <button type="button" class="btn btn-pink-white" data-dismiss="modal">
+                  Close
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <button class="btn btn-blue-white" data-dismiss="modal" id="btn-add-allTasks">
+                  Add Task
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="container mt-2">
+        <div class="row">
+          <div class="mt-2 w-100">
+            <ul class="main-list">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript libraries -->
+    <script src="/jsonflex.js"></script>
+    <script src="/js/libs/jquery-3.2.1.js"></script>
+    <script src="/js/libs/popper-1.11.0.js"></script>
+    <script src="/js/libs/bootstrap-4-beta.js"></script>
+    <!-- My own JavaScript -->
+    <script src="/js/classes/base.class.js"></script>
+    <script src="/js/classes/item.class.js"></script>
+    <script src="/js/classes/app.class.js"></script>
+    <script src="/js/classes/list.class.js"></script>
+    <script src="/js/main.js"></script>
+    <!-- Loading templates -->
+    <script src="/html/list.html"></script>
+  </body>
+</html>
