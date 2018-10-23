@@ -19,6 +19,6 @@ app.get(/^[^\.]*$/, (req, res) => {
 });
 
 // Start server
-app.listen(3000, () =>
-  console.log('Webserver listening on port 3000')
+app.listen(4000, () =>
+  console.log('Webserver listening on port 4000')
 );
