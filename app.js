@@ -20,5 +20,5 @@ app.get(/^[^\.]*$/, (req, res) => {
 
 // Start server
 app.listen(3300, () =>
-  console.log('Webserver listening on port 3300')
+  console.log('Webserver listening on port 3300 DO ITTTTTT!!!')
 );
